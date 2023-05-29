@@ -1,0 +1,49 @@
+section.sectionTwo {
+  width: 85vw;
+  margin: auto;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+section.sectionTwo div.container {
+  position: relative;
+  border-radius: 0.5rem;
+  background: black;
+  color: rgb(214, 214, 214);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+section.sectionTwo div.container .title {
+  font-size: 3rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+section.sectionTwo div.content {
+  width: 100%;
+  padding: 2rem;
+}
+section.sectionTwo div.content .btn {
+  margin-top: 5rem;
+  width: 100%;
+}
+section.sectionTwo div.content a {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background: white;
+  width: 14rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+section.sectionTwo div.content img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+section.sectionTwo div.content p {
+  font-size: 1.5rem;
+}

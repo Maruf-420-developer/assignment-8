@@ -1,0 +1,16 @@
+footer {
+  background: #111;
+  color: white;
+  padding: 10px 23px;
+  text-align: center;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+footer span i {
+  margin: 0 7px;
+}

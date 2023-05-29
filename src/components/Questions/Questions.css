@@ -1,0 +1,60 @@
+div.quiz {
+  color: white;
+  background: black;
+  /* background: rgb(112, 103, 103); */
+  width: 100vw;
+  /* height: 100vh; */
+  padding-top: 10rem;
+}
+div.quiz .container {
+  width: 60rem;
+  /* border: 2px solid red; */
+  padding: 2rem 4rem;
+  margin: auto;
+  display: grid;
+}
+div.container div.questiones.hide {
+  display: none;
+}
+div.container div.hide-result {
+  display: none;
+}
+div.quiz h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  border: 2px solid #30eb30;
+  text-align: center;
+  padding: 1rem 0;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.quiz h3 img {
+  padding-right: 2rem;
+  height: 100%;
+  object-fit: contain;
+}
+div.quiz div.flex {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+div.quiz div.flex button {
+  margin-top: 4rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+div.quiz div.flex .btn-next {
+  background-color: #30eb30;
+  transition: 0.2s;
+}
+div.quiz div.flex .btn-next:hover {
+  background-color: #408540;
+}

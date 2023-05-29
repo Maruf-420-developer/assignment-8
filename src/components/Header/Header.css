@@ -1,0 +1,177 @@
+header {
+  width: 100vw;
+  height: 10rem;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  position: sticky;
+  top: -1px;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(0.2rem);
+}
+header.active {
+  box-shadow: 2px -7px 20px #266ee7fc;
+  background: hsl(0deg, 0%, 98%);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+nav div.logo2 {
+  display: none;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+}
+header div.navbar a {
+  font-size: 1.6rem;
+  color: black;
+  padding: 1rem 0;
+  margin: 1rem 2rem;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.2s ease;
+  z-index: 1;
+  background: transparent;
+}
+
+header div.navbar a:hover {
+  color: crimson;
+}
+
+header div.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid crimson;
+  width: 0;
+  height: 2px;
+  transition: all 0.2s ease;
+}
+header div.navbar a:hover::after {
+  width: 100%;
+}
+header div.navbar a.active::after {
+  width: 100%;
+}
+header div.buyNow,
+header nav div.buy-now {
+  cursor: pointer;
+  background: white;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  box-shadow: 2px 7px 15px #d3e5f5;
+  transition: 0.2s ease-in;
+}
+header nav div.buy-now {
+  display: none;
+  margin: 3rem auto 2rem;
+  padding: 2 2rem;
+  background: black;
+}
+header nav div.buy-now button {
+  font-size: 1.8rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding-right: 1rem;
+  border-right: 2px solid white;
+}
+
+header div.buyNow:hover,
+header nav div.buy-now:hover {
+  box-shadow: 1px 6px 15px #6aa7deb5;
+}
+header div.buyNow:active,
+header nav div.buy-now:active {
+  transform: translateY(-4px);
+}
+header div.buyNow a,
+header nav div.buy-now {
+  color: black;
+  font-weight: 700;
+  padding-right: 1rem;
+  border-right: 1.5px solid black;
+}
+header div.buyNow span,
+header nav div.buy-now span {
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #b92687;
+}
+header nav div.buy-now span {
+  padding-right: 1rem;
+}
+header div.icon {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-weight: 700;
+  color: red;
+  right: 4rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1540px) {
+  header div.navbar {
+    transition: 0.2s ease-out;
+    box-shadow: 2px 1px 20px #16161652;
+  }
+  nav div.logo2 {
+    display: block;
+  }
+  header div.navbar.show {
+    transform: translateX(0);
+  }
+  header div.navbar.close {
+    transform: translateX(-100%);
+  }
+  header div.icon {
+    display: block;
+  }
+  header div.buyNow {
+    margin-right: 10%;
+  }
+  header div.navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30rem;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+  header div.navbar a {
+    margin: 0.2rem 0;
+    padding-left: 3rem;
+  }
+  header div.navbar a:hover {
+    color: #fff;
+  }
+  header div.navbar a::after {
+    border: none;
+    background-color: rgb(39, 28, 28);
+    height: 100%;
+    z-index: -1;
+  }
+  header div.navbar a.active {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header div.buyNow {
+    display: none;
+  }
+  header nav div.buy-now {
+    display: block;
+  }
+}

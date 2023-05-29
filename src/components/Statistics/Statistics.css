@@ -1,0 +1,8 @@
+div.statistics {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #dededee6;
+  color: white;
+}

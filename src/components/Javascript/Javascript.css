@@ -1,0 +1,8 @@
+div.content-area {
+  width: 60%;
+  margin: auto;
+  margin-top: 10rem;
+  background: #fbfbff;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px black;
+}

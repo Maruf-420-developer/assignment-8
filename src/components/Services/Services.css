@@ -1,0 +1,22 @@
+div.services {
+  background: #4d7fac;
+  min-height: 100vh;
+  padding-top: 8rem;
+  text-align: center;
+}
+div.services h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+div.main-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+}
+div.main-area div.container p {
+  position: relative;
+  bottom: 10%;
+  font-size: 2rem;
+}

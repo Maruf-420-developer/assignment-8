@@ -1,0 +1,91 @@
+ul {
+  list-style: none;
+}
+div.options .quiz-name {
+  color: crimson;
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+}
+div.options {
+  margin-top: 8rem;
+}
+div.options h2 {
+  margin-bottom: 2rem;
+}
+div.options ul li {
+  list-style: none;
+  color: #aaaaaa;
+  display: block;
+  position: relative;
+  display: grid;
+  justify-content: space-between;
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid #333;
+}
+
+ul li input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label {
+  display: block;
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.3rem;
+  left: 13%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+ul li:hover label {
+  color: #ffffff;
+}
+ul li .check {
+  display: block;
+  position: absolute;
+  border: 2px solid #aaaaaa;
+  border-radius: 100%;
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border 0.2s linear;
+}
+ul li:hover .checked {
+  border: 2px solid #ffffff;
+}
+ul li .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 0.7rem;
+  width: 0.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  transition: background 0.2s linear;
+}
+
+input[type="radio"]:checked ~ .check {
+  border: 2px solid #30eb30;
+}
+
+input[type="radio"]:checked ~ .check::before {
+  background: #30eb30;
+}
+input[type="radio"]:checked ~ label {
+  color: #30eb30;
+}
+.checked {
+  border: 3px solid #30eb30 !important;
+}
+.checked::before {
+  background: #30eb30;
+}
